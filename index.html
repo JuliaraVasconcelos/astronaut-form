@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Formulários</title>
+    <script src="./js/range.js"></script>
+</head>
+<style>
+</style>
+<body>
+    <img src="./astronaut-animate.svg">
+    <div class="form">
+        <h2><i class="fa-regular fa-rocket-launch"></i>Venha viajar para Marte - Cadastre-se</h2>
+    <div>
+        <label for="usuario">Seu nome </label> 
+        <input type="text" id="usuario" name="usuario" placeholder="Elton John" minlength="10" maxlength="20" required>
+    </div>
+    <div>
+        <label for="usuario">Usuário </label> 
+        <input type="text" id="usuario" name="usuario" placeholder="Rocketman" minlength="10" maxlength="20" required>
+    </div>
+    <div>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Ex.: 12345" minlength="10" maxlength="20" required>
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="elton@john.com" required>
+    </div>
+    <div>
+        <label for="viagem">Data de nascimento </label>
+        <input type="date" id="viagem" name="viagem">
+    </div>
+    <div>
+        <label for="formacao1">Área de atuação </label>
+        <input list="formacao1" placeholder="Digite ou selecione">
+        <datalist id="formacao1">
+            <option value="Ensino Médio">
+            <option value="Ensino Superior">
+            <option value="Pós Graduação">
+            <option value="Mestrado">
+            <option value="Doutorado">
+            </datalist>
+        </input>
+    </div>
+    <div>
+        <label for="mensagem">Nos conte quem é você</label><br>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <button type="submit">Enviar Dados</button>
+    </div>
+</body>
+</html>
